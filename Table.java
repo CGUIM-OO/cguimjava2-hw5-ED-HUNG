@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Table {
 final static int MAXPLAYER=4;
@@ -16,13 +17,17 @@ public Player[] get_player(){
 	return player;
 }
 public void set_dealer(Dealer d){
-	d=dealer;
+	dealer=d;
 }
 public Card get_face_up_card_of_dealer(){
-	return ;
+	ArrayList<Card> getcard =dealer.getOneRoundCard();
+	Card card = getcard.get(1);
+	return card;
 }
 private void ask_each_player_about_bets(){
-	
+	Player(name,chips);
+	System.out.println("Hello, I am " + name + ".");
+	System.out.println("I have " + chips + " chips.");
 
 	
 }
